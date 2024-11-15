@@ -1,38 +1,111 @@
-.App {
+/* src/App.css */
+.app {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  max-width: 1200px;
+  margin: auto;
+}
+
+h1 {
+  color: #333;
+}
+
+.search-bar {
+  margin: 20px 0;
+}
+
+.search-bar input {
+  padding: 10px;
+  width: 300px;
+  font-size: 16px;
+}
+
+.search-bar button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.image-card {
+  position: relative;
+  width: 200px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.image-card img {
+  width: 100%;
+  border-radius: 8px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.image-card button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  font-size: 14px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.canvas-editor {
+  text-align:center;
+  margin-top: 20px;
+}
+
+canvas {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.controls {
+  margin-top: 10px;
+}
+
+.controls button {
+  padding: 10px;
+  margin: 0 5px;
+}
+
+.add-caption-page {
+  align-item:center
+}
+
+
+.canvas-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+
+/* Positioning the header in the top left corner */
+.header {
+  position: absolute;
+  top: 10px;
+  left: 10px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: flex-start;
+  font-size: 16px;
+  color: #333;
 }
 
-.App-link {
-  color: #61dafb;
+.header h2 {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header a {
+  color: #333;
+  text-decoration: none;
+}
+
+.header a:hover {
+  text-decoration: underline;
 }
